@@ -17,7 +17,6 @@ def write_to_file(tasks):
 def add_task(task_name):
     task = {"name": task_name, "status": "pending"}
     tasks = get_tasks()
-    print('tasks', tasks)
     tasks.append(task)
     write_to_file(tasks)
     print("Task added successfully.")
